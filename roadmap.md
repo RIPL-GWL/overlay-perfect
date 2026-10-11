@@ -9,3 +9,4 @@
 - [x] Mobile startup pages: copy overlays the full-bleed photo (no stacking); rehost imported images.
 - [x] Place footer Contact below Our Family on desktop only; verify both layouts.
 - [x] Keep only Navratri Light, Light and Dark themes; verify theme switching.
+- [x] Recheck mobile startup photo framing and overlay founder-section text on photos instead of stacking.

@@ -11,5 +11,5 @@
 - [x] Keep only Navratri Light, Light and Dark themes; verify theme switching.
 - [x] Recheck mobile startup photo framing and overlay founder-section text on photos instead of stacking.
 - [x] Match startup mobile photo and text composition to desktop without changing other pages.
-- [ ] Create investor network from the supplied design with search, filters and linked sample profiles.
-- [ ] Create investor profile from the supplied design; verify navigation, contact and PDF download on desktop/mobile.
+- [x] Create investor network from the supplied design with search, filters and linked sample profiles.
+- [x] Create investor profile from the supplied design; verify navigation, contact and PDF download on desktop/mobile.

@@ -38,6 +38,7 @@ import { Route as StoreListRouteImport } from './routes/store-list'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as GlobalPresenceMarketRouteImport } from './routes/global-presence.$market'
+import { Route as OurInvestorsSlugRouteImport } from './routes/our-investors.$slug'
 import { Route as OurServicesServiceIdRouteImport } from './routes/our-services_.$serviceId'
 
 const IndexRoute = IndexRouteImport.update({
@@ -186,6 +187,11 @@ const GlobalPresenceMarketRoute = GlobalPresenceMarketRouteImport.update({
   path: '/$market',
   getParentRoute: () => GlobalPresenceRoute,
 } as any)
+const OurInvestorsSlugRoute = OurInvestorsSlugRouteImport.update({
+  id: '/$slug',
+  path: '/$slug',
+  getParentRoute: () => OurInvestorsRoute,
+} as any)
 const OurServicesServiceIdRoute = OurServicesServiceIdRouteImport.update({
   id: '/our-services_/$serviceId',
   path: '/our-services/$serviceId',
@@ -205,7 +211,7 @@ export interface FileRoutesByFullPath {
   '/fund-your-startup': typeof FundYourStartupRoute
   '/global-presence': typeof GlobalPresenceRouteWithChildren
   '/manufacturers': typeof ManufacturersRoute
-  '/our-investors': typeof OurInvestorsRoute
+  '/our-investors': typeof OurInvestorsRouteWithChildren
   '/our-mentors': typeof OurMentorsRoute
   '/our-services': typeof OurServicesRoute
   '/our-team': typeof OurTeamRoute
@@ -222,6 +228,7 @@ export interface FileRoutesByFullPath {
   '/terms': typeof TermsRoute
   '/api/chat': typeof ApiChatRoute
   '/global-presence/$market': typeof GlobalPresenceMarketRoute
+  '/our-investors/$slug': typeof OurInvestorsSlugRoute
   '/our-services/$serviceId': typeof OurServicesServiceIdRoute
 }
 export interface FileRoutesByTo {
@@ -237,7 +244,7 @@ export interface FileRoutesByTo {
   '/fund-your-startup': typeof FundYourStartupRoute
   '/global-presence': typeof GlobalPresenceRouteWithChildren
   '/manufacturers': typeof ManufacturersRoute
-  '/our-investors': typeof OurInvestorsRoute
+  '/our-investors': typeof OurInvestorsRouteWithChildren
   '/our-mentors': typeof OurMentorsRoute
   '/our-services': typeof OurServicesRoute
   '/our-team': typeof OurTeamRoute
@@ -254,6 +261,7 @@ export interface FileRoutesByTo {
   '/terms': typeof TermsRoute
   '/api/chat': typeof ApiChatRoute
   '/global-presence/$market': typeof GlobalPresenceMarketRoute
+  '/our-investors/$slug': typeof OurInvestorsSlugRoute
   '/our-services/$serviceId': typeof OurServicesServiceIdRoute
 }
 export interface FileRoutesById {
@@ -270,7 +278,7 @@ export interface FileRoutesById {
   '/fund-your-startup': typeof FundYourStartupRoute
   '/global-presence': typeof GlobalPresenceRouteWithChildren
   '/manufacturers': typeof ManufacturersRoute
-  '/our-investors': typeof OurInvestorsRoute
+  '/our-investors': typeof OurInvestorsRouteWithChildren
   '/our-mentors': typeof OurMentorsRoute
   '/our-services': typeof OurServicesRoute
   '/our-team': typeof OurTeamRoute
@@ -287,6 +295,7 @@ export interface FileRoutesById {
   '/terms': typeof TermsRoute
   '/api/chat': typeof ApiChatRoute
   '/global-presence/$market': typeof GlobalPresenceMarketRoute
+  '/our-investors/$slug': typeof OurInvestorsSlugRoute
   '/our-services_/$serviceId': typeof OurServicesServiceIdRoute
 }
 export interface FileRouteTypes {
@@ -321,6 +330,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/api/chat'
     | '/global-presence/$market'
+    | '/our-investors/$slug'
     | '/our-services/$serviceId'
   fileRoutesByTo: FileRoutesByTo
   to:
@@ -353,6 +363,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/api/chat'
     | '/global-presence/$market'
+    | '/our-investors/$slug'
     | '/our-services/$serviceId'
   id:
     | '__root__'
@@ -385,6 +396,7 @@ export interface FileRouteTypes {
     | '/terms'
     | '/api/chat'
     | '/global-presence/$market'
+    | '/our-investors/$slug'
     | '/our-services_/$serviceId'
   fileRoutesById: FileRoutesById
 }
@@ -401,7 +413,7 @@ export interface RootRouteChildren {
   FundYourStartupRoute: typeof FundYourStartupRoute
   GlobalPresenceRoute: typeof GlobalPresenceRouteWithChildren
   ManufacturersRoute: typeof ManufacturersRoute
-  OurInvestorsRoute: typeof OurInvestorsRoute
+  OurInvestorsRoute: typeof OurInvestorsRouteWithChildren
   OurMentorsRoute: typeof OurMentorsRoute
   OurServicesRoute: typeof OurServicesRoute
   OurTeamRoute: typeof OurTeamRoute
@@ -625,6 +637,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GlobalPresenceMarketRouteImport
       parentRoute: typeof GlobalPresenceRoute
     }
+    '/our-investors/$slug': {
+      id: '/our-investors/$slug'
+      path: '/$slug'
+      fullPath: '/our-investors/$slug'
+      preLoaderRoute: typeof OurInvestorsSlugRouteImport
+      parentRoute: typeof OurInvestorsRoute
+    }
     '/our-services_/$serviceId': {
       id: '/our-services_/$serviceId'
       path: '/our-services/$serviceId'
@@ -647,6 +666,18 @@ const GlobalPresenceRouteWithChildren = GlobalPresenceRoute._addFileChildren(
   GlobalPresenceRouteChildren,
 )
 
+interface OurInvestorsRouteChildren {
+  OurInvestorsSlugRoute: typeof OurInvestorsSlugRoute
+}
+
+const OurInvestorsRouteChildren: OurInvestorsRouteChildren = {
+  OurInvestorsSlugRoute: OurInvestorsSlugRoute,
+}
+
+const OurInvestorsRouteWithChildren = OurInvestorsRoute._addFileChildren(
+  OurInvestorsRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
   AboutRoute: AboutRoute,
@@ -660,7 +691,7 @@ const rootRouteChildren: RootRouteChildren = {
   FundYourStartupRoute: FundYourStartupRoute,
   GlobalPresenceRoute: GlobalPresenceRouteWithChildren,
   ManufacturersRoute: ManufacturersRoute,
-  OurInvestorsRoute: OurInvestorsRoute,
+  OurInvestorsRoute: OurInvestorsRouteWithChildren,
   OurMentorsRoute: OurMentorsRoute,
   OurServicesRoute: OurServicesRoute,
   OurTeamRoute: OurTeamRoute,

@@ -10,33 +10,414 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as AboutRouteImport } from './routes/about'
+import { Route as AdvertiseYourProductRouteImport } from './routes/advertise-your-product'
+import { Route as BusinessValuationCalculatorRouteImport } from './routes/business-valuation-calculator'
+import { Route as BusinessValuationReportRouteImport } from './routes/business-valuation-report'
+import { Route as ContactRouteImport } from './routes/contact'
+import { Route as DisclaimerRouteImport } from './routes/disclaimer'
+import { Route as FaqRouteImport } from './routes/faq'
+import { Route as FundYourBusinessRouteImport } from './routes/fund-your-business'
+import { Route as FundYourStartupRouteImport } from './routes/fund-your-startup'
+import { Route as GlobalPresenceRouteImport } from './routes/global-presence'
+import { Route as ManufacturersRouteImport } from './routes/manufacturers'
+import { Route as OurInvestorsRouteImport } from './routes/our-investors'
+import { Route as OurMentorsRouteImport } from './routes/our-mentors'
+import { Route as OurServicesRouteImport } from './routes/our-services'
+import { Route as OurTeamRouteImport } from './routes/our-team'
+import { Route as PartnerWithUsRouteImport } from './routes/partner-with-us'
+import { Route as PaymentRouteImport } from './routes/payment'
+import { Route as PrivacyPolicyRouteImport } from './routes/privacy-policy'
+import { Route as RegisterYourStoreRouteImport } from './routes/register-your-store'
+import { Route as RetailerPartnerRouteImport } from './routes/retailer-partner'
+import { Route as ScaleYourStartupRouteImport } from './routes/scale-your-startup'
+import { Route as SitemapRouteImport } from './routes/sitemap'
+import { Route as SitemapDotxmlRouteImport } from './routes/sitemap[.]xml'
+import { Route as StartupWithRiplRouteImport } from './routes/startup-with-ripl'
+import { Route as StoreListRouteImport } from './routes/store-list'
+import { Route as TermsRouteImport } from './routes/terms'
+import { Route as ApiChatRouteImport } from './routes/api/chat'
+import { Route as GlobalPresenceMarketRouteImport } from './routes/global-presence.$market'
+import { Route as OurServicesServiceIdRouteImport } from './routes/our-services_.$serviceId'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AboutRoute = AboutRouteImport.update({
+  id: '/about',
+  path: '/about',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const AdvertiseYourProductRoute = AdvertiseYourProductRouteImport.update({
+  id: '/advertise-your-product',
+  path: '/advertise-your-product',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const BusinessValuationCalculatorRoute =
+  BusinessValuationCalculatorRouteImport.update({
+    id: '/business-valuation-calculator',
+    path: '/business-valuation-calculator',
+    getParentRoute: () => rootRouteImport,
+  } as any)
+const BusinessValuationReportRoute = BusinessValuationReportRouteImport.update({
+  id: '/business-valuation-report',
+  path: '/business-valuation-report',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ContactRoute = ContactRouteImport.update({
+  id: '/contact',
+  path: '/contact',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const DisclaimerRoute = DisclaimerRouteImport.update({
+  id: '/disclaimer',
+  path: '/disclaimer',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FaqRoute = FaqRouteImport.update({
+  id: '/faq',
+  path: '/faq',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FundYourBusinessRoute = FundYourBusinessRouteImport.update({
+  id: '/fund-your-business',
+  path: '/fund-your-business',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const FundYourStartupRoute = FundYourStartupRouteImport.update({
+  id: '/fund-your-startup',
+  path: '/fund-your-startup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GlobalPresenceRoute = GlobalPresenceRouteImport.update({
+  id: '/global-presence',
+  path: '/global-presence',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ManufacturersRoute = ManufacturersRouteImport.update({
+  id: '/manufacturers',
+  path: '/manufacturers',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OurInvestorsRoute = OurInvestorsRouteImport.update({
+  id: '/our-investors',
+  path: '/our-investors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OurMentorsRoute = OurMentorsRouteImport.update({
+  id: '/our-mentors',
+  path: '/our-mentors',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OurServicesRoute = OurServicesRouteImport.update({
+  id: '/our-services',
+  path: '/our-services',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const OurTeamRoute = OurTeamRouteImport.update({
+  id: '/our-team',
+  path: '/our-team',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PartnerWithUsRoute = PartnerWithUsRouteImport.update({
+  id: '/partner-with-us',
+  path: '/partner-with-us',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PaymentRoute = PaymentRouteImport.update({
+  id: '/payment',
+  path: '/payment',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const PrivacyPolicyRoute = PrivacyPolicyRouteImport.update({
+  id: '/privacy-policy',
+  path: '/privacy-policy',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RegisterYourStoreRoute = RegisterYourStoreRouteImport.update({
+  id: '/register-your-store',
+  path: '/register-your-store',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RetailerPartnerRoute = RetailerPartnerRouteImport.update({
+  id: '/retailer-partner',
+  path: '/retailer-partner',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ScaleYourStartupRoute = ScaleYourStartupRouteImport.update({
+  id: '/scale-your-startup',
+  path: '/scale-your-startup',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapRoute = SitemapRouteImport.update({
+  id: '/sitemap',
+  path: '/sitemap',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const SitemapDotxmlRoute = SitemapDotxmlRouteImport.update({
+  id: '/sitemap.xml',
+  path: '/sitemap.xml',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StartupWithRiplRoute = StartupWithRiplRouteImport.update({
+  id: '/startup-with-ripl',
+  path: '/startup-with-ripl',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const StoreListRoute = StoreListRouteImport.update({
+  id: '/store-list',
+  path: '/store-list',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const TermsRoute = TermsRouteImport.update({
+  id: '/terms',
+  path: '/terms',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ApiChatRoute = ApiChatRouteImport.update({
+  id: '/api/chat',
+  path: '/api/chat',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GlobalPresenceMarketRoute = GlobalPresenceMarketRouteImport.update({
+  id: '/$market',
+  path: '/$market',
+  getParentRoute: () => GlobalPresenceRoute,
+} as any)
+const OurServicesServiceIdRoute = OurServicesServiceIdRouteImport.update({
+  id: '/our-services_/$serviceId',
+  path: '/our-services/$serviceId',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/advertise-your-product': typeof AdvertiseYourProductRoute
+  '/business-valuation-calculator': typeof BusinessValuationCalculatorRoute
+  '/business-valuation-report': typeof BusinessValuationReportRoute
+  '/contact': typeof ContactRoute
+  '/disclaimer': typeof DisclaimerRoute
+  '/faq': typeof FaqRoute
+  '/fund-your-business': typeof FundYourBusinessRoute
+  '/fund-your-startup': typeof FundYourStartupRoute
+  '/global-presence': typeof GlobalPresenceRouteWithChildren
+  '/manufacturers': typeof ManufacturersRoute
+  '/our-investors': typeof OurInvestorsRoute
+  '/our-mentors': typeof OurMentorsRoute
+  '/our-services': typeof OurServicesRoute
+  '/our-team': typeof OurTeamRoute
+  '/partner-with-us': typeof PartnerWithUsRoute
+  '/payment': typeof PaymentRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/register-your-store': typeof RegisterYourStoreRoute
+  '/retailer-partner': typeof RetailerPartnerRoute
+  '/scale-your-startup': typeof ScaleYourStartupRoute
+  '/sitemap': typeof SitemapRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/startup-with-ripl': typeof StartupWithRiplRoute
+  '/store-list': typeof StoreListRoute
+  '/terms': typeof TermsRoute
+  '/api/chat': typeof ApiChatRoute
+  '/global-presence/$market': typeof GlobalPresenceMarketRoute
+  '/our-services/$serviceId': typeof OurServicesServiceIdRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/advertise-your-product': typeof AdvertiseYourProductRoute
+  '/business-valuation-calculator': typeof BusinessValuationCalculatorRoute
+  '/business-valuation-report': typeof BusinessValuationReportRoute
+  '/contact': typeof ContactRoute
+  '/disclaimer': typeof DisclaimerRoute
+  '/faq': typeof FaqRoute
+  '/fund-your-business': typeof FundYourBusinessRoute
+  '/fund-your-startup': typeof FundYourStartupRoute
+  '/global-presence': typeof GlobalPresenceRouteWithChildren
+  '/manufacturers': typeof ManufacturersRoute
+  '/our-investors': typeof OurInvestorsRoute
+  '/our-mentors': typeof OurMentorsRoute
+  '/our-services': typeof OurServicesRoute
+  '/our-team': typeof OurTeamRoute
+  '/partner-with-us': typeof PartnerWithUsRoute
+  '/payment': typeof PaymentRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/register-your-store': typeof RegisterYourStoreRoute
+  '/retailer-partner': typeof RetailerPartnerRoute
+  '/scale-your-startup': typeof ScaleYourStartupRoute
+  '/sitemap': typeof SitemapRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/startup-with-ripl': typeof StartupWithRiplRoute
+  '/store-list': typeof StoreListRoute
+  '/terms': typeof TermsRoute
+  '/api/chat': typeof ApiChatRoute
+  '/global-presence/$market': typeof GlobalPresenceMarketRoute
+  '/our-services/$serviceId': typeof OurServicesServiceIdRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/about': typeof AboutRoute
+  '/advertise-your-product': typeof AdvertiseYourProductRoute
+  '/business-valuation-calculator': typeof BusinessValuationCalculatorRoute
+  '/business-valuation-report': typeof BusinessValuationReportRoute
+  '/contact': typeof ContactRoute
+  '/disclaimer': typeof DisclaimerRoute
+  '/faq': typeof FaqRoute
+  '/fund-your-business': typeof FundYourBusinessRoute
+  '/fund-your-startup': typeof FundYourStartupRoute
+  '/global-presence': typeof GlobalPresenceRouteWithChildren
+  '/manufacturers': typeof ManufacturersRoute
+  '/our-investors': typeof OurInvestorsRoute
+  '/our-mentors': typeof OurMentorsRoute
+  '/our-services': typeof OurServicesRoute
+  '/our-team': typeof OurTeamRoute
+  '/partner-with-us': typeof PartnerWithUsRoute
+  '/payment': typeof PaymentRoute
+  '/privacy-policy': typeof PrivacyPolicyRoute
+  '/register-your-store': typeof RegisterYourStoreRoute
+  '/retailer-partner': typeof RetailerPartnerRoute
+  '/scale-your-startup': typeof ScaleYourStartupRoute
+  '/sitemap': typeof SitemapRoute
+  '/sitemap.xml': typeof SitemapDotxmlRoute
+  '/startup-with-ripl': typeof StartupWithRiplRoute
+  '/store-list': typeof StoreListRoute
+  '/terms': typeof TermsRoute
+  '/api/chat': typeof ApiChatRoute
+  '/global-presence/$market': typeof GlobalPresenceMarketRoute
+  '/our-services_/$serviceId': typeof OurServicesServiceIdRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths:
+    | '/'
+    | '/about'
+    | '/advertise-your-product'
+    | '/business-valuation-calculator'
+    | '/business-valuation-report'
+    | '/contact'
+    | '/disclaimer'
+    | '/faq'
+    | '/fund-your-business'
+    | '/fund-your-startup'
+    | '/global-presence'
+    | '/manufacturers'
+    | '/our-investors'
+    | '/our-mentors'
+    | '/our-services'
+    | '/our-team'
+    | '/partner-with-us'
+    | '/payment'
+    | '/privacy-policy'
+    | '/register-your-store'
+    | '/retailer-partner'
+    | '/scale-your-startup'
+    | '/sitemap'
+    | '/sitemap.xml'
+    | '/startup-with-ripl'
+    | '/store-list'
+    | '/terms'
+    | '/api/chat'
+    | '/global-presence/$market'
+    | '/our-services/$serviceId'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to:
+    | '/'
+    | '/about'
+    | '/advertise-your-product'
+    | '/business-valuation-calculator'
+    | '/business-valuation-report'
+    | '/contact'
+    | '/disclaimer'
+    | '/faq'
+    | '/fund-your-business'
+    | '/fund-your-startup'
+    | '/global-presence'
+    | '/manufacturers'
+    | '/our-investors'
+    | '/our-mentors'
+    | '/our-services'
+    | '/our-team'
+    | '/partner-with-us'
+    | '/payment'
+    | '/privacy-policy'
+    | '/register-your-store'
+    | '/retailer-partner'
+    | '/scale-your-startup'
+    | '/sitemap'
+    | '/sitemap.xml'
+    | '/startup-with-ripl'
+    | '/store-list'
+    | '/terms'
+    | '/api/chat'
+    | '/global-presence/$market'
+    | '/our-services/$serviceId'
+  id:
+    | '__root__'
+    | '/'
+    | '/about'
+    | '/advertise-your-product'
+    | '/business-valuation-calculator'
+    | '/business-valuation-report'
+    | '/contact'
+    | '/disclaimer'
+    | '/faq'
+    | '/fund-your-business'
+    | '/fund-your-startup'
+    | '/global-presence'
+    | '/manufacturers'
+    | '/our-investors'
+    | '/our-mentors'
+    | '/our-services'
+    | '/our-team'
+    | '/partner-with-us'
+    | '/payment'
+    | '/privacy-policy'
+    | '/register-your-store'
+    | '/retailer-partner'
+    | '/scale-your-startup'
+    | '/sitemap'
+    | '/sitemap.xml'
+    | '/startup-with-ripl'
+    | '/store-list'
+    | '/terms'
+    | '/api/chat'
+    | '/global-presence/$market'
+    | '/our-services_/$serviceId'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  AboutRoute: typeof AboutRoute
+  AdvertiseYourProductRoute: typeof AdvertiseYourProductRoute
+  BusinessValuationCalculatorRoute: typeof BusinessValuationCalculatorRoute
+  BusinessValuationReportRoute: typeof BusinessValuationReportRoute
+  ContactRoute: typeof ContactRoute
+  DisclaimerRoute: typeof DisclaimerRoute
+  FaqRoute: typeof FaqRoute
+  FundYourBusinessRoute: typeof FundYourBusinessRoute
+  FundYourStartupRoute: typeof FundYourStartupRoute
+  GlobalPresenceRoute: typeof GlobalPresenceRouteWithChildren
+  ManufacturersRoute: typeof ManufacturersRoute
+  OurInvestorsRoute: typeof OurInvestorsRoute
+  OurMentorsRoute: typeof OurMentorsRoute
+  OurServicesRoute: typeof OurServicesRoute
+  OurTeamRoute: typeof OurTeamRoute
+  PartnerWithUsRoute: typeof PartnerWithUsRoute
+  PaymentRoute: typeof PaymentRoute
+  PrivacyPolicyRoute: typeof PrivacyPolicyRoute
+  RegisterYourStoreRoute: typeof RegisterYourStoreRoute
+  RetailerPartnerRoute: typeof RetailerPartnerRoute
+  ScaleYourStartupRoute: typeof ScaleYourStartupRoute
+  SitemapRoute: typeof SitemapRoute
+  SitemapDotxmlRoute: typeof SitemapDotxmlRoute
+  StartupWithRiplRoute: typeof StartupWithRiplRoute
+  StoreListRoute: typeof StoreListRoute
+  TermsRoute: typeof TermsRoute
+  ApiChatRoute: typeof ApiChatRoute
+  OurServicesServiceIdRoute: typeof OurServicesServiceIdRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +429,254 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/about': {
+      id: '/about'
+      path: '/about'
+      fullPath: '/about'
+      preLoaderRoute: typeof AboutRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/advertise-your-product': {
+      id: '/advertise-your-product'
+      path: '/advertise-your-product'
+      fullPath: '/advertise-your-product'
+      preLoaderRoute: typeof AdvertiseYourProductRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-valuation-calculator': {
+      id: '/business-valuation-calculator'
+      path: '/business-valuation-calculator'
+      fullPath: '/business-valuation-calculator'
+      preLoaderRoute: typeof BusinessValuationCalculatorRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/business-valuation-report': {
+      id: '/business-valuation-report'
+      path: '/business-valuation-report'
+      fullPath: '/business-valuation-report'
+      preLoaderRoute: typeof BusinessValuationReportRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/contact': {
+      id: '/contact'
+      path: '/contact'
+      fullPath: '/contact'
+      preLoaderRoute: typeof ContactRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/disclaimer': {
+      id: '/disclaimer'
+      path: '/disclaimer'
+      fullPath: '/disclaimer'
+      preLoaderRoute: typeof DisclaimerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/faq': {
+      id: '/faq'
+      path: '/faq'
+      fullPath: '/faq'
+      preLoaderRoute: typeof FaqRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fund-your-business': {
+      id: '/fund-your-business'
+      path: '/fund-your-business'
+      fullPath: '/fund-your-business'
+      preLoaderRoute: typeof FundYourBusinessRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/fund-your-startup': {
+      id: '/fund-your-startup'
+      path: '/fund-your-startup'
+      fullPath: '/fund-your-startup'
+      preLoaderRoute: typeof FundYourStartupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/global-presence': {
+      id: '/global-presence'
+      path: '/global-presence'
+      fullPath: '/global-presence'
+      preLoaderRoute: typeof GlobalPresenceRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/manufacturers': {
+      id: '/manufacturers'
+      path: '/manufacturers'
+      fullPath: '/manufacturers'
+      preLoaderRoute: typeof ManufacturersRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/our-investors': {
+      id: '/our-investors'
+      path: '/our-investors'
+      fullPath: '/our-investors'
+      preLoaderRoute: typeof OurInvestorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/our-mentors': {
+      id: '/our-mentors'
+      path: '/our-mentors'
+      fullPath: '/our-mentors'
+      preLoaderRoute: typeof OurMentorsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/our-services': {
+      id: '/our-services'
+      path: '/our-services'
+      fullPath: '/our-services'
+      preLoaderRoute: typeof OurServicesRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/our-team': {
+      id: '/our-team'
+      path: '/our-team'
+      fullPath: '/our-team'
+      preLoaderRoute: typeof OurTeamRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/partner-with-us': {
+      id: '/partner-with-us'
+      path: '/partner-with-us'
+      fullPath: '/partner-with-us'
+      preLoaderRoute: typeof PartnerWithUsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/payment': {
+      id: '/payment'
+      path: '/payment'
+      fullPath: '/payment'
+      preLoaderRoute: typeof PaymentRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/privacy-policy': {
+      id: '/privacy-policy'
+      path: '/privacy-policy'
+      fullPath: '/privacy-policy'
+      preLoaderRoute: typeof PrivacyPolicyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/register-your-store': {
+      id: '/register-your-store'
+      path: '/register-your-store'
+      fullPath: '/register-your-store'
+      preLoaderRoute: typeof RegisterYourStoreRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/retailer-partner': {
+      id: '/retailer-partner'
+      path: '/retailer-partner'
+      fullPath: '/retailer-partner'
+      preLoaderRoute: typeof RetailerPartnerRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/scale-your-startup': {
+      id: '/scale-your-startup'
+      path: '/scale-your-startup'
+      fullPath: '/scale-your-startup'
+      preLoaderRoute: typeof ScaleYourStartupRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap': {
+      id: '/sitemap'
+      path: '/sitemap'
+      fullPath: '/sitemap'
+      preLoaderRoute: typeof SitemapRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/sitemap.xml': {
+      id: '/sitemap.xml'
+      path: '/sitemap.xml'
+      fullPath: '/sitemap.xml'
+      preLoaderRoute: typeof SitemapDotxmlRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/startup-with-ripl': {
+      id: '/startup-with-ripl'
+      path: '/startup-with-ripl'
+      fullPath: '/startup-with-ripl'
+      preLoaderRoute: typeof StartupWithRiplRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/store-list': {
+      id: '/store-list'
+      path: '/store-list'
+      fullPath: '/store-list'
+      preLoaderRoute: typeof StoreListRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/terms': {
+      id: '/terms'
+      path: '/terms'
+      fullPath: '/terms'
+      preLoaderRoute: typeof TermsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/api/chat': {
+      id: '/api/chat'
+      path: '/api/chat'
+      fullPath: '/api/chat'
+      preLoaderRoute: typeof ApiChatRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/global-presence/$market': {
+      id: '/global-presence/$market'
+      path: '/$market'
+      fullPath: '/global-presence/$market'
+      preLoaderRoute: typeof GlobalPresenceMarketRouteImport
+      parentRoute: typeof GlobalPresenceRoute
+    }
+    '/our-services_/$serviceId': {
+      id: '/our-services_/$serviceId'
+      path: '/our-services/$serviceId'
+      fullPath: '/our-services/$serviceId'
+      preLoaderRoute: typeof OurServicesServiceIdRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
+interface GlobalPresenceRouteChildren {
+  GlobalPresenceMarketRoute: typeof GlobalPresenceMarketRoute
+}
+
+const GlobalPresenceRouteChildren: GlobalPresenceRouteChildren = {
+  GlobalPresenceMarketRoute: GlobalPresenceMarketRoute,
+}
+
+const GlobalPresenceRouteWithChildren = GlobalPresenceRoute._addFileChildren(
+  GlobalPresenceRouteChildren,
+)
+
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  AboutRoute: AboutRoute,
+  AdvertiseYourProductRoute: AdvertiseYourProductRoute,
+  BusinessValuationCalculatorRoute: BusinessValuationCalculatorRoute,
+  BusinessValuationReportRoute: BusinessValuationReportRoute,
+  ContactRoute: ContactRoute,
+  DisclaimerRoute: DisclaimerRoute,
+  FaqRoute: FaqRoute,
+  FundYourBusinessRoute: FundYourBusinessRoute,
+  FundYourStartupRoute: FundYourStartupRoute,
+  GlobalPresenceRoute: GlobalPresenceRouteWithChildren,
+  ManufacturersRoute: ManufacturersRoute,
+  OurInvestorsRoute: OurInvestorsRoute,
+  OurMentorsRoute: OurMentorsRoute,
+  OurServicesRoute: OurServicesRoute,
+  OurTeamRoute: OurTeamRoute,
+  PartnerWithUsRoute: PartnerWithUsRoute,
+  PaymentRoute: PaymentRoute,
+  PrivacyPolicyRoute: PrivacyPolicyRoute,
+  RegisterYourStoreRoute: RegisterYourStoreRoute,
+  RetailerPartnerRoute: RetailerPartnerRoute,
+  ScaleYourStartupRoute: ScaleYourStartupRoute,
+  SitemapRoute: SitemapRoute,
+  SitemapDotxmlRoute: SitemapDotxmlRoute,
+  StartupWithRiplRoute: StartupWithRiplRoute,
+  StoreListRoute: StoreListRoute,
+  TermsRoute: TermsRoute,
+  ApiChatRoute: ApiChatRoute,
+  OurServicesServiceIdRoute: OurServicesServiceIdRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)

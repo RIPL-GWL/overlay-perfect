@@ -6,5 +6,6 @@
 - [x] Recreate Startup with RIPL from the supplied reference and images in Light and Navratri Special; verify page and links.
 - [x] Recreate Scale Your Startup from the supplied reference and images in Light and Navratri Special; verify page and links.
 - [x] Polish all three startup pages on mobile and remove image subject cropping.
+- [x] Mobile startup pages: copy overlays the full-bleed photo (no stacking); rehost imported images.
 - [x] Place footer Contact below Our Family on desktop only; verify both layouts.
 - [x] Keep only Navratri Light, Light and Dark themes; verify theme switching.

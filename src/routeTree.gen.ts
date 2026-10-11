@@ -38,6 +38,7 @@ import { Route as StoreListRouteImport } from './routes/store-list'
 import { Route as TermsRouteImport } from './routes/terms'
 import { Route as ApiChatRouteImport } from './routes/api/chat'
 import { Route as GlobalPresenceMarketRouteImport } from './routes/global-presence.$market'
+import { Route as OurInvestorsIndexRouteImport } from './routes/our-investors.index'
 import { Route as OurInvestorsSlugRouteImport } from './routes/our-investors.$slug'
 import { Route as OurServicesServiceIdRouteImport } from './routes/our-services_.$serviceId'
 
@@ -187,6 +188,11 @@ const GlobalPresenceMarketRoute = GlobalPresenceMarketRouteImport.update({
   path: '/$market',
   getParentRoute: () => GlobalPresenceRoute,
 } as any)
+const OurInvestorsIndexRoute = OurInvestorsIndexRouteImport.update({
+  id: '/',
+  path: '/',
+  getParentRoute: () => OurInvestorsRoute,
+} as any)
 const OurInvestorsSlugRoute = OurInvestorsSlugRouteImport.update({
   id: '/$slug',
   path: '/$slug',
@@ -230,6 +236,7 @@ export interface FileRoutesByFullPath {
   '/global-presence/$market': typeof GlobalPresenceMarketRoute
   '/our-investors/$slug': typeof OurInvestorsSlugRoute
   '/our-services/$serviceId': typeof OurServicesServiceIdRoute
+  '/our-investors/': typeof OurInvestorsIndexRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
@@ -244,7 +251,6 @@ export interface FileRoutesByTo {
   '/fund-your-startup': typeof FundYourStartupRoute
   '/global-presence': typeof GlobalPresenceRouteWithChildren
   '/manufacturers': typeof ManufacturersRoute
-  '/our-investors': typeof OurInvestorsRouteWithChildren
   '/our-mentors': typeof OurMentorsRoute
   '/our-services': typeof OurServicesRoute
   '/our-team': typeof OurTeamRoute
@@ -263,6 +269,7 @@ export interface FileRoutesByTo {
   '/global-presence/$market': typeof GlobalPresenceMarketRoute
   '/our-investors/$slug': typeof OurInvestorsSlugRoute
   '/our-services/$serviceId': typeof OurServicesServiceIdRoute
+  '/our-investors': typeof OurInvestorsIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -297,6 +304,7 @@ export interface FileRoutesById {
   '/global-presence/$market': typeof GlobalPresenceMarketRoute
   '/our-investors/$slug': typeof OurInvestorsSlugRoute
   '/our-services_/$serviceId': typeof OurServicesServiceIdRoute
+  '/our-investors/': typeof OurInvestorsIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -332,6 +340,7 @@ export interface FileRouteTypes {
     | '/global-presence/$market'
     | '/our-investors/$slug'
     | '/our-services/$serviceId'
+    | '/our-investors/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/'
@@ -346,7 +355,6 @@ export interface FileRouteTypes {
     | '/fund-your-startup'
     | '/global-presence'
     | '/manufacturers'
-    | '/our-investors'
     | '/our-mentors'
     | '/our-services'
     | '/our-team'
@@ -365,6 +373,7 @@ export interface FileRouteTypes {
     | '/global-presence/$market'
     | '/our-investors/$slug'
     | '/our-services/$serviceId'
+    | '/our-investors'
   id:
     | '__root__'
     | '/'
@@ -398,6 +407,7 @@ export interface FileRouteTypes {
     | '/global-presence/$market'
     | '/our-investors/$slug'
     | '/our-services_/$serviceId'
+    | '/our-investors/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
@@ -637,6 +647,13 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof GlobalPresenceMarketRouteImport
       parentRoute: typeof GlobalPresenceRoute
     }
+    '/our-investors/': {
+      id: '/our-investors/'
+      path: '/'
+      fullPath: '/our-investors/'
+      preLoaderRoute: typeof OurInvestorsIndexRouteImport
+      parentRoute: typeof OurInvestorsRoute
+    }
     '/our-investors/$slug': {
       id: '/our-investors/$slug'
       path: '/$slug'
@@ -668,10 +685,12 @@ const GlobalPresenceRouteWithChildren = GlobalPresenceRoute._addFileChildren(
 
 interface OurInvestorsRouteChildren {
   OurInvestorsSlugRoute: typeof OurInvestorsSlugRoute
+  OurInvestorsIndexRoute: typeof OurInvestorsIndexRoute
 }
 
 const OurInvestorsRouteChildren: OurInvestorsRouteChildren = {
   OurInvestorsSlugRoute: OurInvestorsSlugRoute,
+  OurInvestorsIndexRoute: OurInvestorsIndexRoute,
 }
 
 const OurInvestorsRouteWithChildren = OurInvestorsRoute._addFileChildren(

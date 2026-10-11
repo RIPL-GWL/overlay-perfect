@@ -1,0 +1,16 @@
+{
+  "source": "code-archive",
+  "capabilities": [
+    {"capability":"code and routes","source":"uploaded TanStack Start project","outcome":"preserve","status":"verified","next_action":"All content routes opened; build OK; country updates verified"},
+    {"capability":"schema","source":"leads migration and source integrations","outcome":"migrate","status":"verified","next_action":"Cloud enquiry insert and privileged read verified; temporary row deleted"},
+    {"capability":"records","source":"no record export attached","outcome":"migrate","status":"pending","next_action":"Request filtered CSV or JSON exports after preview"},
+    {"capability":"auth identities","source":"No app sign-in, user accounts, profiles or memberships detected; generated auth scaffolding only","outcome":"not_applicable","status":"verified","next_action":"No user-account migration needed for detected source experience"},
+    {"capability":"authorization","source":"insert-only private leads","outcome":"preserve","status":"verified","next_action":"No public read policy; privileged enquiry read verified"},
+    {"capability":"assets and stored file bytes","source":"98 unique external pointers and bundled Netherlands image","outcome":"preserve","status":"verified","next_action":"Original bytes reuploaded; tested pages have zero broken images"},
+    {"capability":"chat provider and secrets","source":"Lovable AI Gateway","outcome":"preserve","status":"verified","next_action":"Original streaming chat returned AI response with status 200"},
+    {"capability":"FAQ translation and valuation AI","source":"existing Lovable AI Gateway calls","outcome":"preserve","status":"pending","next_action":"Dedicated live feature verification remains; implementation and models preserved"},
+    {"capability":"payments email and analytics","source":"static payment bank information and mail links only; no automated gateways or analytics detected","outcome":"preserve","status":"verified","next_action":"Payment page and footer link verified"},
+    {"capability":"endpoints callbacks webhooks schedules","source":"/api/chat only; no external schedules or webhooks detected","outcome":"preserve","status":"verified","next_action":"Original chat endpoint retained and tested"},
+    {"capability":"cutover and verification","source":"unpublished imported site","outcome":"preserve","status":"pending","next_action":"Existing records export and owner publishing decision remain"}
+  ]
+}

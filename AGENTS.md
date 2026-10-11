@@ -17,3 +17,4 @@
 - Keep Startup with RIPL presentation in a dedicated frontend feature module and direct application actions to the existing startup funding form, so community pages and enquiry storage remain unchanged.
 - Keep Scale Your Startup in a dedicated frontend feature module with scoped presentation styles and existing contact/funding destinations, so other startup pages and enquiry handling remain compatible.
 - Keep mobile startup photo-section overlay rules scoped to `.startup-page`, including founder sections, so presentation fixes never change other site pages.
+- Keep investor directory and profiles in a dedicated frontend feature with shared sample data and scoped styles; reuse contact destinations to preserve enquiry handling.

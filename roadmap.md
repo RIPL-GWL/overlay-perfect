@@ -10,3 +10,4 @@
 - [x] Place footer Contact below Our Family on desktop only; verify both layouts.
 - [x] Keep only Navratri Light, Light and Dark themes; verify theme switching.
 - [x] Recheck mobile startup photo framing and overlay founder-section text on photos instead of stacking.
+- [ ] Match startup mobile photo and text composition to desktop without changing other pages.

@@ -3,8 +3,10 @@ import { ArrowRight, ChartNoAxesCombined, Coins, FileText, Globe2, HandCoins, Ha
 import { Button } from "@/frontend/components/ui/button";
 import { FundingForm } from "@/frontend/components/forms/funding-form";
 import { isNavratri, useSiteTheme } from "@/frontend/lib/site-theme";
-import hero from "@/assets/startup-staircase.png.asset.json";
-import impact from "@/assets/startup-india.png.asset.json";
+import heroSrc from "@/assets/startup-staircase.webp";
+const hero = { url: heroSrc };
+import impactSrc from "@/assets/startup-india.webp";
+const impact = { url: impactSrc };
 import team from "@/assets/startup-team.jpg";
 import support from "@/assets/startup-support.jpg";
 

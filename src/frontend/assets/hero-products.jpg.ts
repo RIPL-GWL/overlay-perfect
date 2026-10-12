@@ -1,2 +1,3 @@
-import asset from "./hero-products.jpg.asset.json";
+import assetSrc from "./hero-products.webp";
+const asset = { url: assetSrc };
 export default asset.url;

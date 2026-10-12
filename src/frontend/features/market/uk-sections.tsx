@@ -2,9 +2,12 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Users, TrendingUp, Globe2, Ship, Gem, Shirt, Cog, Pill, Sprout, Car, FlaskConical, Laptop, Armchair, Factory, Truck, Store, ShieldCheck, Handshake, Building2, FileCheck2, BarChart3, Package, Plane } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Button } from "@/frontend/components/ui/button";
-import hero from "@/frontend/assets/uk-market/hero.webp.asset.json";
-import products from "@/assets/uk-products.jpg.asset.json";
-import bridge from "@/assets/uk-bridge.jpg.asset.json";
+import heroSrc from "@/frontend/assets/uk-market/hero.webp";
+const hero = { url: heroSrc };
+import productsSrc from "@/assets/uk-products.webp";
+const products = { url: productsSrc };
+import bridgeSrc from "@/assets/uk-bridge.webp";
+const bridge = { url: bridgeSrc };
 
 type Point = { icon: LucideIcon; title: string; note?: string };
 const exports: Point[] = [

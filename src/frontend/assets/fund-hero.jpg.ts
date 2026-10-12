@@ -1,2 +1,3 @@
-import asset from "./fund-hero.jpg.asset.json";
+import assetSrc from "./fund-hero.webp";
+const asset = { url: assetSrc };
 export default asset.url;

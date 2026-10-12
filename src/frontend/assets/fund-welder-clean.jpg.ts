@@ -1,2 +1,3 @@
-import asset from "./fund-welder-clean.jpg.asset.json";
+import assetSrc from "./fund-welder-clean.webp";
+const asset = { url: assetSrc };
 export default asset.url;

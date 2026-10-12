@@ -1,2 +1,3 @@
-import asset from "./gp-world-map.webp.asset.json";
+import assetSrc from "./gp-world-map.webp";
+const asset = { url: assetSrc };
 export default asset.url;

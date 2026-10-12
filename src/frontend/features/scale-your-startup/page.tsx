@@ -3,8 +3,10 @@ import { ArrowRight, Rocket, Users, MapPin, Globe2, CheckCircle2, Target, Coins,
 import { Button } from "@/frontend/components/ui/button";
 import { isNavratri, useSiteTheme } from "@/frontend/lib/site-theme";
 import { districtFigure } from "@/frontend/data/retail-network";
-import hero from "@/assets/scale-startup-hero.png.asset.json";
-import traction from "@/assets/scale-startup-journey.png.asset.json";
+import heroSrc from "@/assets/scale-startup-hero.webp";
+const hero = { url: heroSrc };
+import tractionSrc from "@/assets/scale-startup-journey.webp";
+const traction = { url: tractionSrc };
 import founders from "@/assets/startup-team.jpg";
 import summit from "@/assets/scale-startup-summit.jpg";
 

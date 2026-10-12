@@ -1,2 +1,3 @@
-import asset from "./cta-handshake.jpg.asset.json";
+import assetSrc from "./cta-handshake.webp";
+const asset = { url: assetSrc };
 export default asset.url;

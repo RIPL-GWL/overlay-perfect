@@ -1,9 +1,12 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
 import { Globe2, Mail, Menu, X } from "lucide-react";
-import headerLogo from "@/assets/header-wordmark.png.asset.json";
-import headerDarkLogo from "@/assets/header-wordmark-dark.png.asset.json";
-import footerLogo from "@/assets/footer-logo.png.asset.json";
+import headerLogoSrc from "@/assets/header-wordmark.webp";
+const headerLogo = { url: headerLogoSrc };
+import headerDarkLogoSrc from "@/assets/header-wordmark-dark.webp";
+const headerDarkLogo = { url: headerDarkLogoSrc };
+import footerLogoSrc from "@/assets/footer-logo.webp";
+const footerLogo = { url: footerLogoSrc };
 import { isNavratri, useSiteTheme } from "@/frontend/lib/site-theme";
 import { Button } from "@/frontend/components/ui/button";
 import { COMPANY } from "@/frontend/content/company";

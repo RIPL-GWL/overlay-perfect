@@ -16,13 +16,11 @@ describe("imported site navigation and themes", () => {
   it("lists all new family and startup pages but not Products", () => {
     const paths = publicPages.map(page => page.path);
     expect(paths).not.toContain("/products");
-    for (const path of ["/our-investors", "/our-mentors", "/our-team", "/fund-your-startup", "/startup-with-ripl", "/scale-your-startup"]) expect(paths).toContain(path);
+    for (const path of ["/our-investors", "/our-mentors", "/our-team"]) expect(paths).not.toContain(path);
+    for (const path of ["/fund-your-startup", "/startup-with-ripl", "/scale-your-startup"]) expect(paths).toContain(path);
   });
   it("uses the agreed page titles", () => {
     const labels = Object.fromEntries(publicPages.map(page => [page.path, page.label]));
-    expect(labels["/our-investors"]).toBe("Investor Network");
-    expect(labels["/our-mentors"]).toBe("Mentor Network");
-    expect(labels["/our-team"]).toBe("Our People");
     expect(labels["/fund-your-startup"]).toBe("Fund Your Startup");
     expect(labels["/startup-with-ripl"]).toBe("Startup with RIPL");
     expect(labels["/business-valuation-calculator"]).toBe("Business Valuation Calculator");

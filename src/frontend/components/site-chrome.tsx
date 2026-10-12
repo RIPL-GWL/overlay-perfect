@@ -93,7 +93,7 @@ export function SiteFooter() {
             <li><Link to="/advertise-your-product" className="hover:text-primary">Advertise Your Product</Link></li>
           </ul>
         </nav>
-        <nav aria-label="Our Family links" className="footer-family col-span-1">
+        <nav aria-label="Our Family links" className="footer-family col-span-1 hidden" hidden>
           <h3 className="text-sm uppercase tracking-wider text-accent-foreground">Our Family</h3>
           <ul className="mt-3 grid gap-3 text-sm text-ink-foreground/75 sm:mt-5">
           </ul>

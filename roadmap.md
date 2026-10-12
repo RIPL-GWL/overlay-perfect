@@ -16,3 +16,4 @@
 - [x] Store all site images in the project as compressed WebP.
 - [x] Investor profile: remove contact, Approach, Advisors, News; tabs only Overview/Thesis/Portfolio/Focus.
 - [x] Hide Investor Network, Mentor Network, Our People from public.
+- [x] Investor profile: remove Download Profile (PDF) option and unused PDF library.

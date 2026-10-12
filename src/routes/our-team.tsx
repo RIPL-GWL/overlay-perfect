@@ -1,9 +1,11 @@
 import { createFileRoute } from "@tanstack/react-router";
+import { lockHiddenPage } from "@/frontend/lib/hidden-pages";
 import { GraduationCap, Users, UserRound } from "lucide-react";
 import { SiteFooter, SiteHeader } from "@/frontend/components/site-chrome";
 import { TEAM } from "@/frontend/features/team/team";
 
 export const Route = createFileRoute("/our-team")({
+  beforeLoad: lockHiddenPage,
   head: () => ({
     meta: [
       { title: "Our People — Rishishwar Industry" },

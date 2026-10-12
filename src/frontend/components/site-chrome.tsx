@@ -96,9 +96,6 @@ export function SiteFooter() {
         <nav aria-label="Our Family links" className="footer-family col-span-1">
           <h3 className="text-sm uppercase tracking-wider text-accent-foreground">Our Family</h3>
           <ul className="mt-3 grid gap-3 text-sm text-ink-foreground/75 sm:mt-5">
-            <li><Link to="/our-investors" className="hover:text-primary">Investor Network</Link></li>
-            <li><Link to="/our-mentors" className="hover:text-primary">Mentor Network</Link></li>
-            <li><Link to="/our-team" className="hover:text-primary">Our People</Link></li>
           </ul>
         </nav>
         <nav aria-label="Startups and Investments links" className="footer-startups col-span-1">

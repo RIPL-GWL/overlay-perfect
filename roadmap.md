@@ -13,3 +13,6 @@
 - [x] Match startup mobile photo and text composition to desktop without changing other pages.
 - [x] Create investor network from the supplied design with search, filters and linked sample profiles.
 - [x] Create investor profile from the supplied design; verify navigation, contact and PDF download on desktop/mobile.
+- [x] Store all site images in the project as compressed WebP.
+- [ ] Investor profile: remove contact, Approach, Advisors, News; tabs only Overview/Thesis/Portfolio/Focus.
+- [ ] Hide Investor Network, Mentor Network, Our People from public.

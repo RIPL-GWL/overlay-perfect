@@ -1,3 +1,3 @@
-import assetSrc from "./gp-ship.webp";
+import assetSrc from "./gp-ship.img.webp";
 const asset = { url: assetSrc };
 export default asset.url;

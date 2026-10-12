@@ -1,3 +1,3 @@
-import assetSrc from "./illuminated-sign-board.webp";
+import assetSrc from "./illuminated-sign-board.img.webp";
 const asset = { url: assetSrc };
 export default asset.url;

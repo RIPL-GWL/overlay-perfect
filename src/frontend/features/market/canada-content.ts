@@ -12,11 +12,16 @@ import {
 } from "lucide-react";
 
 import heroImage from "@/frontend/assets/canada-market/canada-india-trade-hero.jpg";
-import babyCareAsset from "@/frontend/assets/usa-market/baby-care-optimized.webp.asset.json";
-import foodBeverageAsset from "@/frontend/assets/usa-market/food-beverage-optimized.webp.asset.json";
-import homeCareAsset from "@/frontend/assets/usa-market/home-care-optimized.webp.asset.json";
-import oralCareAsset from "@/frontend/assets/usa-market/oral-care-optimized.webp.asset.json";
-import personalCareAsset from "@/frontend/assets/usa-market/personal-care-optimized.webp.asset.json";
+import babyCareAssetSrc from "@/frontend/assets/usa-market/baby-care-optimized.webp";
+const babyCareAsset = { url: babyCareAssetSrc };
+import foodBeverageAssetSrc from "@/frontend/assets/usa-market/food-beverage-optimized.webp";
+const foodBeverageAsset = { url: foodBeverageAssetSrc };
+import homeCareAssetSrc from "@/frontend/assets/usa-market/home-care-optimized.webp";
+const homeCareAsset = { url: homeCareAssetSrc };
+import oralCareAssetSrc from "@/frontend/assets/usa-market/oral-care-optimized.webp";
+const oralCareAsset = { url: oralCareAssetSrc };
+import personalCareAssetSrc from "@/frontend/assets/usa-market/personal-care-optimized.webp";
+const personalCareAsset = { url: personalCareAssetSrc };
 
 export const canadaHeroImage = heroImage;
 

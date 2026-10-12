@@ -1,2 +1,3 @@
-import asset from "./retailer-store.webp.asset.json";
+import assetSrc from "./retailer-store.img.webp";
+const asset = { url: assetSrc };
 export default asset.url;

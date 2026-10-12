@@ -1,9 +1,12 @@
 import { Link, useRouterState } from "@tanstack/react-router";
 import { useState } from "react";
 import { Globe2, Mail, Menu, X } from "lucide-react";
-import headerLogo from "@/assets/header-wordmark.png.asset.json";
-import headerDarkLogo from "@/assets/header-wordmark-dark.png.asset.json";
-import footerLogo from "@/assets/footer-logo.png.asset.json";
+import headerLogoSrc from "@/assets/header-wordmark.webp";
+const headerLogo = { url: headerLogoSrc };
+import headerDarkLogoSrc from "@/assets/header-wordmark-dark.webp";
+const headerDarkLogo = { url: headerDarkLogoSrc };
+import footerLogoSrc from "@/assets/footer-logo.webp";
+const footerLogo = { url: footerLogoSrc };
 import { isNavratri, useSiteTheme } from "@/frontend/lib/site-theme";
 import { Button } from "@/frontend/components/ui/button";
 import { COMPANY } from "@/frontend/content/company";
@@ -90,12 +93,9 @@ export function SiteFooter() {
             <li><Link to="/advertise-your-product" className="hover:text-primary">Advertise Your Product</Link></li>
           </ul>
         </nav>
-        <nav aria-label="Our Family links" className="footer-family col-span-1">
+        <nav aria-label="Our Family links" className="footer-family col-span-1 hidden" hidden>
           <h3 className="text-sm uppercase tracking-wider text-accent-foreground">Our Family</h3>
           <ul className="mt-3 grid gap-3 text-sm text-ink-foreground/75 sm:mt-5">
-            <li><Link to="/our-investors" className="hover:text-primary">Investor Network</Link></li>
-            <li><Link to="/our-mentors" className="hover:text-primary">Mentor Network</Link></li>
-            <li><Link to="/our-team" className="hover:text-primary">Our People</Link></li>
           </ul>
         </nav>
         <nav aria-label="Startups and Investments links" className="footer-startups col-span-1">

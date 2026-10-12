@@ -4,7 +4,8 @@ import { SiteFooter, SiteHeader } from "@/frontend/components/site-chrome";
 import { Button } from "@/frontend/components/ui/button";
 import { EmailForm } from "@/frontend/components/forms/email-form";
 import { contactFields } from "@/frontend/content/forms";
-import cover from "@/assets/svc-partnerships.jpg.asset.json";
+import coverSrc from "@/assets/svc-partnerships.webp";
+const cover = { url: coverSrc };
 
 type CommunityPageProps = { title: string; description: string; kind: "investors" | "mentors" | "startup" | "scale" };
 

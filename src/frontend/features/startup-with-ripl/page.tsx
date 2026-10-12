@@ -2,9 +2,12 @@ import { Link } from "@tanstack/react-router";
 import { ArrowRight, Lightbulb, Users, Handshake, UserRoundCheck, Coins, TrendingUp, Network, FileText, Search, Settings, Rocket, CheckCircle2, HeartPulse, GraduationCap, Leaf, Wheat, Truck, Factory, Plane, Package, Target } from "lucide-react";
 import { Button } from "@/frontend/components/ui/button";
 import { isNavratri, useSiteTheme } from "@/frontend/lib/site-theme";
-import hero from "@/assets/ripl-startup-hero.png.asset.json";
-import enterprise from "@/assets/ripl-startup-enterprise.png.asset.json";
-import transformation from "@/assets/ripl-startup-transformation.png.asset.json";
+import heroSrc from "@/assets/ripl-startup-hero.webp";
+const hero = { url: heroSrc };
+import enterpriseSrc from "@/assets/ripl-startup-enterprise.webp";
+const enterprise = { url: enterpriseSrc };
+import transformationSrc from "@/assets/ripl-startup-transformation.webp";
+const transformation = { url: transformationSrc };
 import team from "@/assets/startup-team.jpg";
 import summit from "@/assets/ripl-startup-summit.jpg";
 

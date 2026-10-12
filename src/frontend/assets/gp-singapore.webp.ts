@@ -1,2 +1,3 @@
-import asset from "./gp-singapore.webp.asset.json";
+import assetSrc from "./gp-singapore.img.webp";
+const asset = { url: assetSrc };
 export default asset.url;

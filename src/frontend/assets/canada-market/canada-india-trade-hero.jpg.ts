@@ -1,2 +1,3 @@
-import asset from "./canada-india-trade-hero.jpg.asset.json";
+import assetSrc from "./canada-india-trade-hero.webp";
+const asset = { url: assetSrc };
 export default asset.url;

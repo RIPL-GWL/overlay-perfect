@@ -1,2 +1,3 @@
 import { createFileRoute, Outlet } from '@tanstack/react-router';
-export const Route=createFileRoute('/our-investors')({component:()=> <Outlet/>});
+import { lockHiddenPage } from '@/frontend/lib/hidden-pages';
+export const Route=createFileRoute('/our-investors')({beforeLoad:lockHiddenPage,component:()=> <Outlet/>});

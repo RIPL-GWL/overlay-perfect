@@ -1,2 +1,3 @@
-import asset from "./rishishwar-logo.webp.asset.json";
+import assetSrc from "./rishishwar-logo.img.webp";
+const asset = { url: assetSrc };
 export default asset.url;

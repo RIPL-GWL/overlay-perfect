@@ -1,4 +1,5 @@
 import { createServerFn } from "@tanstack/react-start";
-import shareImage from "@/assets/rishishwar-share.jpg.asset.json";
+import shareImageSrc from "@/assets/rishishwar-share.webp";
+const shareImage = { url: shareImageSrc };
 
 export const getSiteShareImage = createServerFn({ method: "GET" }).handler(() => ({ image: shareImage.url }));

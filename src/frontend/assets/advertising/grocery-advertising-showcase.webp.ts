@@ -1,2 +1,3 @@
-import asset from "./grocery-advertising-showcase.webp.asset.json";
+import assetSrc from "./grocery-advertising-showcase.img.webp";
+const asset = { url: assetSrc };
 export default asset.url;

@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState, lazy, Suspense } from "react";
 import { RotateCcw, X } from "lucide-react";
-import logo from "@/assets/ri-brand-mark.png.asset.json";
+import logoSrc from "@/assets/ri-brand-mark.webp";
+const logo = { url: logoSrc };
 import { Button } from "./ui/button";
 import { LanguageSelect } from "./language-select";
 const ChatConversation = lazy(() => import("./ripl-conversation"));

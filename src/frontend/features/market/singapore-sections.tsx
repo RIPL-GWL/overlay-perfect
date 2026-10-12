@@ -2,10 +2,14 @@ import { Link } from "@tanstack/react-router";
 import { ArrowLeft, ArrowRight, Globe2, TrendingUp, Handshake, Ship, SprayCan, Pill, Shirt, Sprout, Cog, FlaskConical, Car, Cpu, BriefcaseBusiness, HeartPulse, ShoppingBag, Package, Users, Layers, Truck } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 import { Button } from "@/frontend/components/ui/button";
-import hero from "@/frontend/assets/singapore-market/hero.webp.asset.json";
-import partner from "@/frontend/assets/singapore-market/partner.webp.asset.json";
-import products from "@/assets/sg-products.jpg.asset.json";
-import port from "@/assets/sg-port.jpg.asset.json";
+import heroSrc from "@/frontend/assets/singapore-market/hero.webp";
+const hero = { url: heroSrc };
+import partnerSrc from "@/frontend/assets/singapore-market/partner.webp";
+const partner = { url: partnerSrc };
+import productsSrc from "@/assets/sg-products.webp";
+const products = { url: productsSrc };
+import portSrc from "@/assets/sg-port.webp";
+const port = { url: portSrc };
 
 type Point = { icon: LucideIcon; title: string; note?: string };
 const highlights: Point[] = [

@@ -5,10 +5,14 @@ import {
   Truck, Users, Wine, Globe2, Milk, Building2,
 } from "lucide-react";
 import { Button } from "@/frontend/components/ui/button";
-import heroAsset from "@/frontend/assets/australia-market/hero.webp.asset.json";
-import indiaExportsImg from "@/assets/au-india-exports.jpg.asset.json";
-import auExportsImg from "@/assets/au-australia-exports.jpg.asset.json";
-import portImg from "@/assets/au-port.jpg.asset.json";
+import heroAssetSrc from "@/frontend/assets/australia-market/hero.webp";
+const heroAsset = { url: heroAssetSrc };
+import indiaExportsImgSrc from "@/assets/au-india-exports.webp";
+const indiaExportsImg = { url: indiaExportsImgSrc };
+import auExportsImgSrc from "@/assets/au-australia-exports.webp";
+const auExportsImg = { url: auExportsImgSrc };
+import portImgSrc from "@/assets/au-port.webp";
+const portImg = { url: portImgSrc };
 
 const presence = [
   { icon: Boxes, t: "Import & Export Opportunities" },
